@@ -9,6 +9,10 @@ html {
 }
 
 .page {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  height: 534px;
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
@@ -35,6 +39,23 @@ fieldset {
 ul,
 ol {
   list-style: none;
+}
+
+.content {
+  display: grid;
+  grid-template-areas:
+  "result content__details";
+  align-items: end;
+  grid-template-columns: 711px 399px;
+  gap: 30px;
+}
+
+.result {
+
+}
+
+.content__details{
+
 }
 
 /* Кастомный скроллбар */
