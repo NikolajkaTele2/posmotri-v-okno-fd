@@ -70,10 +70,12 @@ ol {
 }
 
 .content__details{
-  flex: 1;
   display: flex;
   flex-direction: column;
   gap: 26px;
+}
+
+.title {
 }
 
 .content__list-container {
