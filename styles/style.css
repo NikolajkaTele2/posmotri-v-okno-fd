@@ -12,7 +12,7 @@ html {
   display: flex;
   justify-content: center; 
   align-items: center;
-  height: 534px;
+  min-height: 100vh;
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
@@ -46,6 +46,7 @@ ol {
   grid-template-areas:
   "result content__details";
   align-items: end;
+  width: 1140px;
   grid-template-columns: 711px 399px;
   gap: 30px;
   margin: 133px 30px 133px 30px;
@@ -54,9 +55,10 @@ ol {
 .result {
   display: flex;
   flex-direction: column;
+  gap: 16px;
 }
 
-.result__video-container video{
+.result__video-container video {
   width: 711px;
   height: 386px;
   object-fit: fill;
@@ -66,21 +68,50 @@ ol {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 54px;
   gap: 40px;
 }
 
-.content__details{
+.content__details {
   display: flex;
   flex-direction: column;
   gap: 26px;
 }
 
 .title {
+
+}
+
+.content__list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .content__list-container {
   height: 298px;
   overflow-y: auto;
+  display: flex;
+  gap: 30px;
+}
+
+.content__video-card {
+  display: flex;
+  flex-direction: row;
+}
+
+.content__video-card-thumbnail {
+  object-fit: fill;
+  object-position: center;
+  width: 194px;
+  height: 103px;
+  
+}
+
+.content__video-card-description-container {
+  flex-grow: inherit;
+  width: 196px;
+  height: 103px;
 }
 
 /* Кастомный скроллбар */
