@@ -107,6 +107,7 @@ fieldset {
 .search-form__label {
   display: flex;
   width: fit-content;
+  align-items: center;
 }
 
 .search-form__textfield {
@@ -126,6 +127,44 @@ fieldset {
 
 .search-form__textfield:has(:focus-visible) {
   outline: none;
+}
+
+.search-form__fieldset-title {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 18px;
+  
+}
+
+.search-form__checkbox-list {
+  display: flex;
+  border: none;
+}
+
+.search-form__pseudo-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 19px;
+  width: 19px;
+  background-color: transparent;
+  margin-right: 1.5px;
+  border: 1px #ffffff solid;
+}
+
+.search-form__pseudo-checkbox::after {
+  position: absolute;
+  content: "";
+  display: block;
+  align-items: center;
+  opacity: 0;
+  height: 15px;
+  width: 15px;
+  background: #ffffff ;
+}
+
+.search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
+  opacity: 1;
 }
 
 .content__details {
