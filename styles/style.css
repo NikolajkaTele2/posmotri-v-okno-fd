@@ -79,7 +79,6 @@ ol {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 54px;
   gap: 40px;
 }
 
@@ -90,6 +89,7 @@ ol {
 }
 
 .search-form__fieldset-title{
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -125,7 +125,7 @@ fieldset {
   border-bottom: 1px #ffffff solid;
   border-left: none;
   border-right: none;
-  color: #FFFFFFB2;
+  color: #ffffff;
   font-family: 'Fira Sans Condensed', sans-serif;
   background-color: transparent;
   appearance: none;
@@ -136,16 +136,13 @@ fieldset {
   font-size: 18px;
 }
 
-.search-form__fieldset-title {
-  font-family: 'Fira Sans Condensed', sans-serif;
-  font-size: 18px;
-  
+.search-form__textfield::placeholder {
+  color: #FFFFFFB2
 }
 
 .search-form__checkbox-list {
   display: flex;
   border: none;
-  
 }
 
 .search-form__pseudo-checkbox {
@@ -223,10 +220,12 @@ fieldset {
   display: flex;
   flex-direction: column;
   gap: 26px;
+  width: 399px;
+  height: 534px;
 }
 
 .title {
-  font-family: 'Oswald';
+  font-family: 'Oswald', sans-serif;
   font-weight: 700;
   font-style: normal;
   line-height: 94%;
@@ -254,7 +253,7 @@ fieldset {
   outline: 1px #ffffff solid;
 }
 
-.content__list-item:active {
+.content__card-link:active {
   background-color: #545050;
 }
 
@@ -265,6 +264,7 @@ fieldset {
 .content__list-container {
   position: relative;
   height: 298px;
+  width: 399px;
   overflow-y: auto;
   display: flex;
   flex-direction: column;
@@ -277,13 +277,16 @@ fieldset {
 }
 
 .content__video-card-title {
-  font-family: 'Oswald';
+  font-family: 'Oswald', sans-serif;
   font-weight: 700;
   font-style: normal;
   line-height: 100%;
   text-transform: uppercase;
   font-size: 30px;
+  text-overflow: ellipsis;
   white-space: nowrap;
+  overflow: hidden;
+  max-width: 192px; 
 }
 
 .content__video-card-description {
@@ -301,15 +304,17 @@ fieldset {
 }
 
 .content__card-link_current {
-  background-color: #1b1919;
+  background-color: #545050;
+  display: block;
 }
 
-.content__card-link_current:active {
+.content__card-link:active {
   background-color: #545050;
+  display: block;
 }
 
 .content__video-card-thumbnail {
-  object-fit: fill;
+  object-fit: cover;
   object-position: center;
   width: 194px;
   height: 103px;
