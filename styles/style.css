@@ -240,6 +240,23 @@ fieldset {
   gap: 30px;
 }
 
+.content__list-item {
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+.content__list-item:focus-visible {
+  outline: 1px #ffffff solid;
+}
+
+.content__list-item:active {
+  background-color: #545050;
+}
+
+.content__list-item:hover {
+  text-decoration: underline;
+}
+
 .content__list-container {
   height: 298px;
   overflow-y: auto;
@@ -275,6 +292,14 @@ fieldset {
 .content__video-card {
   display: flex;
   flex-direction: row;
+}
+
+.content__card-link_current {
+  background-color: #1b1919;
+}
+
+.content__card-link_current:active {
+  background-color: #545050;
 }
 
 .content__video-card-thumbnail {
