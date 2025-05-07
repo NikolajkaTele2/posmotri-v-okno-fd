@@ -69,6 +69,7 @@ ol {
 }
 
 .result__video-container video {
+  position: relative;
   width: 711px;
   height: 386px;
   object-fit: fill;
@@ -144,6 +145,7 @@ fieldset {
 .search-form__checkbox-list {
   display: flex;
   border: none;
+  
 }
 
 .search-form__pseudo-checkbox {
@@ -156,6 +158,7 @@ fieldset {
   background-color: transparent;
   margin-right: 1.5px;
   border: 1px #ffffff solid;
+  cursor: pointer;
 }
 
 .search-form__pseudo-checkbox::after {
@@ -188,6 +191,7 @@ fieldset {
   color: #ffffff;
   background-color: transparent;
   border: 1px #ffffff solid;
+  cursor: pointer;
 }
 
 .button:focus {
@@ -243,6 +247,7 @@ fieldset {
 .content__list-item {
   padding-left: 3px;
   padding-right: 3px;
+  cursor: pointer;
 }
 
 .content__list-item:focus-visible {
@@ -258,6 +263,7 @@ fieldset {
 }
 
 .content__list-container {
+  position: relative;
   height: 298px;
   overflow-y: auto;
   display: flex;
