@@ -108,6 +108,15 @@ fieldset {
   display: flex;
   width: fit-content;
   align-items: center;
+  outline: none;
+}
+
+.search-form__label-text {
+  position: relative; 
+}
+
+.search-form__label:has(.search-form__textfield:focus-visible) {
+  outline: 1px solid #ffffff;
 }
 
 .search-form__textfield {
@@ -119,14 +128,11 @@ fieldset {
   font-family: 'Fira Sans Condensed', sans-serif;
   background-color: transparent;
   appearance: none;
+  outline: none;
   padding: 0px;
   width: 225px;
   height: 27px;
   font-size: 18px;
-}
-
-.search-form__textfield:has(:focus-visible) {
-  outline: none;
 }
 
 .search-form__fieldset-title {
@@ -165,6 +171,14 @@ fieldset {
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
   opacity: 1;
+}
+
+.search-form__label:has(.search-form__checkbox:focus-visible) {
+  outline: 1px solid #ffffff;
+}
+
+.search-form__label:hover .search-form__label-text {
+  text-decoration: underline;
 }
 
 .content__details {
