@@ -72,15 +72,11 @@ ol {
   position: relative;
   width: 711px;
   height: 386px;
-  overflow: hidden; 
 }
 
 .result__video {
   width: 100%;
   height: 100%;
-}
-
-.result__video video {
   object-fit: cover; 
   display: block; 
 }
@@ -109,6 +105,7 @@ ol {
 .search-form__checkbox-list {
   display: flex;
   gap: 15px;
+  border: none;
 }
 
 fieldset {
@@ -148,15 +145,11 @@ fieldset {
   height: auto;
   font-size: 18px;
   word-spacing: -1px; /* без этого плывет Санкт-Петербург */
+  appearance: none; 
 }
 
 .search-form__textfield::placeholder {
   color: #FFFFFFB2
-}
-
-.search-form__checkbox-list {
-  display: flex;
-  border: none;
 }
 
 .search-form__checkbox-list .search-form__label{
@@ -173,7 +166,7 @@ fieldset {
   width: 19px;
   background-color: transparent;
   margin-right: 1.5px;
-  border: 1px #ffffff solid;
+  outline: 1px #ffffff solid;
   cursor: pointer;
 }
 
@@ -203,10 +196,10 @@ fieldset {
 .button {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 700;
   color: #ffffff;
   background-color: transparent;
-  border: 1px #ffffff solid;
+  outline: 1px #ffffff solid;
   cursor: pointer;
   margin-top: 20px;
 }
@@ -235,13 +228,12 @@ fieldset {
   text-align: center;
 }
 
-
 .content__details {
   display: flex;
   flex-direction: column;
   gap: 26px;
   width: 399px;
-  height: 534px;
+  min-height: 534px;
 }
 
 .title {
@@ -271,10 +263,6 @@ fieldset {
 
 .content__list-item:focus-visible {
   outline: 1px #ffffff solid;
-}
-
-.content__card-link:active {
-  background-color: #545050;
 }
 
 .content__list-item:hover {
@@ -343,7 +331,9 @@ fieldset {
 .more-button {
   width: 390px;
   min-height: 34px; 
-  margin-bottom: 10px;
+  margin-top: 0px;
+  margin-bottom: 2px;
+  margin-top: auto; /* прижимание кнопки к низу, если удалить контент */
 }
 
 .content__video-card-description-container {
